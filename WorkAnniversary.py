@@ -31,9 +31,9 @@ def client_url(self):
         return client_urls
 
 def li_login_scrape(self):
-    driver = webdriver.Chrome('/Users/Nick/chromedriver.exe')
-    email = 'nanderson993@gmail.com'
-    password = 'Nickmike93!'
+    driver = webdriver.Chrome('/path/to/chromedriver.exe')
+    email = 'yo email'
+    password = '***********'
     actions.login(driver, email, password)
     client_urls = client_url(self.filename)
     df = pd.DataFrame(columns=['Name', 'Work Anniversary'])
